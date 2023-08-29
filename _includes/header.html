@@ -52,6 +52,16 @@
                 </a>
               </li>
 
+              <!-- Influences
+              <li class="nav-item {% if page.url contains 'influences' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/influences/ | relative_url}}">influences
+                  {%- if page.url contains == 'influences' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li> -->
+
+
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
@@ -95,6 +105,16 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+
+              
+              <!-- <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
+                  {%- if page.url contains 'blog' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li> -->
+
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
