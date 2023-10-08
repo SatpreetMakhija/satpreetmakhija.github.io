@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-I work at [Google](https://cloud.google.com) as a Strategic Cloud Engineer in the cloud division. I help my clients make the most out of Google Cloud products. I specialise in data.
+I work at [Google](https://cloud.google.com) as a Strategic Cloud Engineer in the cloud division. I help my clients make the most out of Google Cloud products. I specialise in data processing. I've also built software products such as [WatchYourMouth.in](https://www.watchyourmouth.in/).  
 
 During my Bachelors degree at [Ashoka University](https://ashoka.edu.in/), I majored in Computer Science with a minor in Economics.
 
