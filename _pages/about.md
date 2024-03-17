@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic2.jpg
   image_circular: false # crops the image to make it circular
   # address: >
   #   <p><center>work.satpreet@gmail.com</center></p>
@@ -18,11 +18,9 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-I work at [Google](https://cloud.google.com) as a Strategic Cloud Engineer in the cloud division. I help my clients make the most out of Google Cloud products. I specialise in data processing. I've also built software products such as [WatchYourMouth.in](https://www.watchyourmouth.in/).  
+I'm a software engineer at Google working on Google Distributed Cloud - [Hosted](https://cloud.google.com/distributed-cloud-hosted?hl=en). I am passionate about software and distributed systems. Currently, I am honing my skills in Go and [K8s](https://kubernetes.io/). 
 
-During my Bachelors degree at [Ashoka University](https://ashoka.edu.in/), I majored in Computer Science with a minor in Economics.
-
-Beyond work, I spend time playing tennis and reading books. You can find my reading list [here](https://www.goodreads.com/review/list/116660458-sama?ref=nav_mybooks&shelf=to-read).
+During my bachelors at [Ashoka University](https://ashoka.edu.in/), I majored in Computer Science. Beyond work, I spend time playing tennis and reading books. You can find my reading list [here](https://www.goodreads.com/review/list/116660458-sama?ref=nav_mybooks&shelf=to-read).
 
 
 
