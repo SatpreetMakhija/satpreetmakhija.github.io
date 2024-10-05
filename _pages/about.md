@@ -18,11 +18,12 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-I'm a software engineer at Google working on Google Distributed Cloud - [Hosted](https://cloud.google.com/distributed-cloud-hosted?hl=en). I am passionate about software and distributed systems. Currently, I am honing my skills in Go and [K8s](https://kubernetes.io/). 
+Hey there! Welcome to my website. My name is Satpreet Makhija. I'm a software engineer at Google in the Google Distributed Cloud team. Currently, I'm
+working on a [device](https://cloud.google.com/distributed-cloud/hosted/docs/latest/appliance/overview) that brings cloud capabilities to the edge.
 
-During my bachelors at [Ashoka University](https://ashoka.edu.in/), I majored in Computer Science. Beyond work, I spend time playing tennis and reading books. You can find my reading list [here](https://www.goodreads.com/review/list/116660458-sama?ref=nav_mybooks&shelf=to-read).
+I care deeply about software systems and how they can be used to solve problems. When I'm not building software, I can be found playing tennis, reading books or meditating. You can find my reading list [here](https://www.goodreads.com/review/list/116660458-satpreet?ref=nav_mybooks&shelf=read).
 
-
+I enjoy making friends online who share similar interests. Don't hesitate to reach out at `work.<MY_FIRST_NAME>@gmail.com`.
 
 
 <!-- 
