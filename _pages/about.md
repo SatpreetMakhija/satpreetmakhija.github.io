@@ -20,10 +20,19 @@ social: true  # includes social icons at the bottom of the page
 Hey, thanks for visiting my site.
 <br>
 <br>
-I'm Satpreet. I enjoy working on distributed infrastructure and backend problems, most of which I learnt at Google working as a Software Engineer in their [Distributed Cloud](https://cloud.google.com/distributed-cloud) team. If you've got such problems, I'm your guy. I care deeply about my craft and am a sucker for good abstractions. Whenever I get a chance, I'm improving my Neovim configs.
-<br>
-<br>
-My free time is mostly spent on photography (see my [portfolio](https://portfolio.satpreetmakhija.com)) and writing (read my latest [piece](/blog/2025/the-messiah-of-empty-highs)). You can tell a lot about a person from their reading list. Here's [mine](https://www.goodreads.com/review/list/116660458-satpreet?ref=nav_mybooks&shelf=read).
+
+  I'm Satpreet. I see the world through a computational lens—a perspective that's served
+  me well across domains. I've worked on distributed systems, building platforms,
+  infrastructure, and backend systems, most notably at [Google's Distributed
+  Cloud](https://cloud.google.com/distributed-cloud) team. I care deeply about
+  abstractions because they're not just tools but the very medium through which we solve
+  problems.
+  <br>
+  <br>
+  I'm a voracious reader and enjoy writing (read my latest
+  [piece](/blog/2025/the-messiah-of-empty-highs)). You can tell a lot about a person from
+   their reading list—here's [mine](https://www.goodreads.com/review/list/116660458-satpr
+  eet?ref=nav_mybooks&shelf=read).
 <br>
 <br>
 The easiest way to reach out to me is via email: work[dot]satpreet[at]gmail[dot]com.
