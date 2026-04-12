@@ -21,18 +21,27 @@ Hey, thanks for visiting my site.
 <br>
 <br>
 
-  I'm Satpreet. I see the world through a computational lens—a perspective that's served
-  me well across domains. I've worked on distributed systems, building platforms,
-  infrastructure, and backend systems, most notably at [Google's Distributed
-  Cloud](https://cloud.google.com/distributed-cloud) team. I care deeply about
-  abstractions because they're not just tools but the very medium through which we solve
-  problems.
+  I'm Satpreet. I think a lot about abstractions&mdash;how we formalize intuition into
+  symbol, and how those symbols quietly shape the way we reason. This fascination plays
+  out in two very different arenas for me.
+  <br>
+  <br>
+  Professionally, I've worked on distributed systems, building platforms, infrastructure,
+  and backend systems, most notably at [Google's Distributed
+  Cloud](https://cloud.google.com/distributed-cloud) team. Good software is abstraction
+  itself&mdash;hiding complexity so others can build on top of it.
+  <br>
+  <br>
+  But I'm equally drawn to the history of abstraction itself. Mathematics is the oldest
+  and most compressed language we have, and I find myself wondering about the etymology of
+  its notation&mdash;how it shapes the way we reason. I built
+  [MathAncestry](https://mathancestry.satpreetmakhija.com) out of that curiosity: think
+  `git blame` for math symbols.
   <br>
   <br>
   I'm a voracious reader and enjoy writing (read my latest
   [piece](/blog/2025/the-messiah-of-empty-highs)). You can tell a lot about a person from
-   their reading list—here's [mine](https://www.goodreads.com/review/list/116660458-satpr
-  eet?ref=nav_mybooks&shelf=read).
+  their reading list&mdash;here's [mine](https://www.goodreads.com/review/list/116660458-satpreet?ref=nav_mybooks&shelf=read).
 <br>
 <br>
 The easiest way to reach out to me is via email: work[dot]satpreet[at]gmail[dot]com.
