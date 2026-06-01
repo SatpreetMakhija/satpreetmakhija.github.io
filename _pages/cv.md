@@ -11,6 +11,6 @@ nav_order: 5
 
 ---
 
+_Note: this CV is due for an update and may not reflect my current research role._
 
 <iframe src="/assets/pdf/cv_satpreet_makhija.pdf" width="100%" height="800" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
-

@@ -21,30 +21,12 @@ Hey, thanks for visiting my site.
 <br>
 <br>
 
-  I'm Satpreet. I think a lot about abstractions&mdash;how we formalize intuition into
-  symbol, and how those symbols quietly shape the way we reason. This fascination plays
-  out in two very different arenas for me.
-  <br>
-  <br>
-  Professionally, I've worked on distributed systems, building platforms, infrastructure,
-  and backend systems, most notably at [Google's Distributed
-  Cloud](https://cloud.google.com/distributed-cloud) team. Good software is abstraction
-  itself&mdash;hiding complexity so others can build on top of it.
-  <br>
-  <br>
-  But I'm equally drawn to the history of abstraction itself. Mathematics is the oldest
-  and most compressed language we have, and I find myself wondering about the etymology of
-  its notation&mdash;how it shapes the way we reason. I built
-  [MathAncestry](https://mathancestry.satpreetmakhija.com) out of that curiosity: think
-  `git blame` for math symbols.
-  <br>
-  <br>
-  I'm a voracious reader and enjoy writing (read my latest
-  [piece](/blog/2025/the-messiah-of-empty-highs)). You can tell a lot about a person from
-  their reading list&mdash;here's [mine](https://www.goodreads.com/review/list/116660458-satpreet?ref=nav_mybooks&shelf=read).
+I'm a recent industry-turned researcher working at the [Vachani School of Advanced Computing](https://www.ashoka.edu.in/vachani-school-of-advanced-computing/) with [Prof. Aalok Thakkar](https://aalok-thakkar.github.io/index.html) on program synthesis, with a focus on maximal synthesis.
+Before this, I worked on distributed infrastructure systems at [Google's Distributed
+Cloud](https://cloud.google.com/distributed-cloud) team with a focus on air-gapped software.
 <br>
 <br>
-The easiest way to reach out to me is via email: work[dot]satpreet[at]gmail[dot]com.
+If you're thinking about program synthesis, logic, formal methods, proofs as programs, I'd be happy to hear from you. I'm open to focused collaborations, reading suggestions, idea exchanges, or just a friendly hello. The easiest way to reach out to me is via email: work[dot]satpreet[at]gmail[dot]com.
 
 <!-- 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
