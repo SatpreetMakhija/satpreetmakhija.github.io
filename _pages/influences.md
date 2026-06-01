@@ -2,12 +2,13 @@
 layout: page
 title: influences
 permalink: /influences/
-nav: true
+nav: false
 nav_order: 3
+published: false
 ---
 
 
-A list of people who've left a considerable mark on who I am.
+These are people whose reasons, questions, or poems made me stop, listen, and reorganize parts of myself.
 
 
 - [Alexander Grothendieck](https://en.wikipedia.org/wiki/Alexander_Grothendieck) shaped how I think about abstraction: finding the right structure in which a problem becomes natural, rather than forcing cleverness onto the wrong representation.
