@@ -4,10 +4,16 @@ layout: default
 <!-- page.html -->
 <div class="post">
 
+  {% if page.hide_title != true or page.description %}
   <header class="post-header">
+    {%- unless page.hide_title -%}
     <h1 class="post-title">{{ page.title }}</h1>
+    {%- endunless -%}
+    {%- if page.description -%}
     <p class="post-description">{{ page.description }}</p>
+    {%- endif -%}
   </header>
+  {% endif %}
 
   <article>
     {{ content }}

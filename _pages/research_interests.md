@@ -2,31 +2,24 @@
 layout: page
 permalink: /research-interests/
 title: research interests
-description: Questions I am currently thinking about.
+description:
 nav: true
-nav_order: 2
+nav_order: 1
+hide_title: true
 ---
 
-I am currently working with [Prof. Aalok Thakkar](https://aalok-thakkar.github.io/)
-on program synthesis, especially maximal synthesis and solver-guided methods.
-More broadly, I am interested in the relation between syntax and semantics: how formal
-symbols can be manipulated on one plane, while meaning, truth, and behavior seem to live
-on another. I'm also interested in using the Curry-Howard correspondence as a bridge between proofs and programs.
+#### Proofs as Programs
 
-#### Broader Questions
+The Curry-Howard correspondence says that mathematical proofs can be read as programs, and programs can be read as mathematical proofs. This makes questions about programs relevant to proofs as well: construction, equivalence, optimization, search, synthesis, and semantics.
 
-- What makes an abstraction good: compression, compositionality, explanatory power,
-  or something else?
-- How do syntax and semantics interact when programs, proofs, and formal systems can
-  refer to themselves?
-- What does the Curry-Howard correspondence reveal about the boundary between proving,
-  programming, and computing?
-- What can programming languages, logic, and mathematics learn from each other about
-  structure?
-- How should AI systems interact with formal methods: as search tools, proof
-  assistants, synthesizers, or collaborators?
+I am interested in what classical principles bring into this picture. What computational content appears when we add principles such as excluded middle or choice? What changes when a proof is no longer just a static certificate, but something with program-like behavior?
 
-I would be glad to hear from people thinking about program synthesis, logic, formal
-methods, proofs as programs, or the broader question of how abstractions shape
-thought. I am especially interested in conversations that connect concrete systems work
-with deeper questions about representation and structure.
+#### Syntax and Semantics
+
+Another theme I care about is where syntax and semantics meet. Gödel showed that a formal syntactic system cannot capture all semantic truth about arithmetic. Turing gave another face to this boundary through computation.
+
+I want to understand how syntax and semantics can be studied together inside formal systems: how symbols are manipulated, how meaning is assigned, and where the two stop lining up cleanly.
+
+#### Neurosymbolic AI
+
+I think the syntax-semantics boundary is also a useful way to think about neurosymbolic AI. Symbolic systems give structure, compositionality, and explicit reasoning. Neural systems give learned representations and flexible semantics. A central question is how these two modes can be made to interact without either one being reduced to the other.
