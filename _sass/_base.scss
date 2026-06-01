@@ -426,10 +426,10 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
+  margin-top: auto !important;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 
 // CV
@@ -541,6 +541,34 @@ footer.sticky-bottom {
 
     mjx-container[jax="CHTML"][display="true"] {
       display: unset;
+    }
+  }
+}
+
+.blog-page {
+  .post-list {
+    li {
+      border-bottom: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      h3 {
+        font-size: 1.2rem;
+        line-height: 1.35;
+        margin-bottom: 0.2rem;
+      }
+
+      a.post-title {
+        color: var(--global-theme-color);
+        border-bottom: 0;
+        text-decoration: none;
+
+        &:hover {
+          color: var(--global-hover-color);
+          border-bottom: 0;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
@@ -857,6 +885,12 @@ html.transition *:after {
         color: var(--global-theme-color);
       }
     }
+  }
+}
+
+.blog-post {
+  .post-header {
+    margin-bottom: 2rem;
   }
 }
 

@@ -8,6 +8,11 @@ math: false
 toc: false
 comments: true
 share: true
+published: false
+_styles: >
+  .post-content {
+    margin-top: 2rem;
+  }
 ---
 
 
@@ -24,4 +29,3 @@ A great movie is not just its runtime—it’s everything that precedes it. The 
 You *need* its absence to enjoy its presence.  
 
 A hard slap on a cold morning is felt. One too many, and you’re numb. Don’t become numb.  If not, the subtleties that make life *life* will elude you forever.
-

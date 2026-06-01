@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Changing bases: an intuitive explanation"
+title: "Changing bases — an intuitive explanation"
 date: 2026-04-06
 description: Why the change of base formula works, explained through a multiplicative number line
 math: true

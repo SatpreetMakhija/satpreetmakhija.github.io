@@ -4,6 +4,7 @@ title: "On Abstract Thinking"
 date: 2026-04-28
 description: Embracing the fragmented nature of mathematical reality
 tags: [maths]
+published: false
 ---
 
 You always see a subset of reality at any given moment. This has important implications.
