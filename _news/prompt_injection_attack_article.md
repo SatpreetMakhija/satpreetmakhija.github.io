@@ -2,6 +2,8 @@
 layout: post
 date: 2023-07-11 15:59:00+0530
 inline: true
+hidden: true
+published: false
 related_posts: false
 ---
 
