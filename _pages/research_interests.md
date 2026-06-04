@@ -19,7 +19,3 @@ I am interested in what classical principles bring into this picture. What compu
 Another theme I care about is where syntax and semantics meet. Gödel showed that a formal syntactic system cannot capture all semantic truth about arithmetic. Turing gave another face to this boundary through computation.
 
 I want to understand how syntax and semantics can be studied together inside formal systems: how symbols are manipulated, how meaning is assigned, and where the two stop lining up cleanly.
-
-#### Neurosymbolic AI
-
-I think the syntax-semantics boundary is also a useful way to think about neurosymbolic AI. Symbolic systems give structure, compositionality, and explicit reasoning. Neural systems give learned representations and flexible semantics. A central question is how these two modes can be made to interact without either one being reduced to the other.
