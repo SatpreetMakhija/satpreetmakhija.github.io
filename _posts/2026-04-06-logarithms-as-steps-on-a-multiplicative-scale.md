@@ -9,13 +9,15 @@ tags: [maths]
 
 The change of base formula states:
 
-$$\log_b(x) = \frac{\log_a(x)}{\log_a(b)}$$
+$$
+\log_b(x) = \frac{\log_a(x)}{\log_a(b)}
+$$
 
 There exists an algebraic proof. This explanation is meant to give you more intuition for why the formula is what it is.
 
 ### A multiplicative scale
 
-Consider a number line where we reach a number $$x$$ by repeatedly multiplying by some fixed number $$a > 1$$. Take $$a = 2$$. Starting from 1:
+Consider a number line where we reach a number $x$ by repeatedly multiplying by some fixed number $a > 1$. Take $a = 2$. Starting from 1:
 
 <div style="overflow-x: auto; margin: 2em 0;">
 <svg viewBox="0 0 680 100" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
@@ -59,7 +61,7 @@ Consider a number line where we reach a number $$x$$ by repeatedly multiplying b
 </svg>
 </div>
 
-The number 8 is three steps from 1. The number 32 is five. The position of any number $$x$$ on this scale — the number of steps from 1 — is what we call $$\log_2(x)$$. For an arbitrary $$x$$, the length from 1 to $$x$$ is $$\log_2(x)$$.
+The number 8 is three steps from 1. The number 32 is five. The position of any number $x$ on this scale — the number of steps from 1 — is what we call $\log_2(x)$. For an arbitrary $x$, the length from 1 to $x$ is $\log_2(x)$.
 
 <div style="overflow-x: auto; margin: 2em 0;">
 <svg viewBox="0 0 680 125" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
@@ -104,7 +106,7 @@ The number 8 is three steps from 1. The number 32 is five. The position of any n
 
 ### Placing b on the scale
 
-Now introduce another number $$b > 1$$. It too has a place on our scale, at position $$\log_a(b)$$. Take $$b = 8$$. On the base-2 scale, 8 sits at step 3.
+Now introduce another number $b > 1$. It too has a place on our scale, at position $\log_a(b)$. Take $b = 8$. On the base-2 scale, 8 sits at step 3.
 
 <div style="overflow-x: auto; margin: 2em 0;">
 <svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
@@ -152,11 +154,11 @@ Now introduce another number $$b > 1$$. It too has a place on our scale, at posi
 </svg>
 </div>
 
-The segment from 1 to $$b$$ has a definite length on the scale: $$\log_a(b)$$ steps. But $$b$$ is also a perfectly good multiplier in its own right. Multiplying by $$b$$ once gets you from 1 to $$b$$. Multiplying again gets you from $$b$$ to $$b^2$$. You can traverse the same line using $$b$$ as the step — in larger jumps.
+The segment from 1 to $b$ has a definite length on the scale: $\log_a(b)$ steps. But $b$ is also a perfectly good multiplier in its own right. Multiplying by $b$ once gets you from 1 to $b$. Multiplying again gets you from $b$ to $b^2$. You can traverse the same line using $b$ as the step — in larger jumps.
 
 ### The ratio
 
-The segment from 1 to $$x$$ has length $$\log_a(x)$$. The segment from 1 to $$b$$ has length $$\log_a(b)$$. Each jump of $$\times b$$ covers exactly $$\log_a(b)$$ units on the scale. So we ask: how many copies of the smaller segment fit into the larger one?
+The segment from 1 to $x$ has length $\log_a(x)$. The segment from 1 to $b$ has length $\log_a(b)$. Each jump of $\times b$ covers exactly $\log_a(b)$ units on the scale. So we ask: how many copies of the smaller segment fit into the larger one?
 
 <div style="overflow-x: auto; margin: 2em 0;">
 <svg viewBox="0 0 750 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 750px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
@@ -212,6 +214,8 @@ The segment from 1 to $$x$$ has length $$\log_a(x)$$. The segment from 1 to $$b$
 </svg>
 </div>
 
-$$\frac{\log_a(x)}{\log_a(b)}$$
+$$
+\frac{\log_a(x)}{\log_a(b)}
+$$
 
-This quotient counts the number of times you must multiply by $$b$$ to reach $$x$$. That, by definition, is $$\log_b(x)$$.
+This quotient counts the number of times you must multiply by $b$ to reach $x$. That, by definition, is $\log_b(x)$.

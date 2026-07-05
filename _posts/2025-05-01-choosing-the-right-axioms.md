@@ -8,9 +8,7 @@ description: A framework to help you choose the right axioms
 
 
 
-I recently went down the rabbit hole of studying Real Analysis. As part of the first exercise, we constructed natural numbers using **Peano’s axioms**. One of these axioms is often described as “ensuring no circularity”—meaning we don’t define a natural number in terms of itself or create logical loops. Essentially, it’s the idea that 
-$$0$$ 
-(or the “first” natural number) is not the successor of any other number. This ensures you can’t keep going backwards indefinitely and end up with something like “this number created itself.”
+I recently went down the rabbit hole of studying Real Analysis. As part of the first exercise, we constructed natural numbers using **Peano’s axioms**. One of these axioms is often described as “ensuring no circularity”—meaning we don’t define a natural number in terms of itself or create logical loops. Essentially, it’s the idea that $0$ (or the “first” natural number) is not the successor of any other number. This ensures you can’t keep going backwards indefinitely and end up with something like “this number created itself.”
 
 This made me wonder: **How do we choose the correct axioms in the first place?**
 
@@ -20,9 +18,7 @@ In some sense, defining axioms is a backward process rather than a forward one: 
 
 - **Multiplication** can be defined as repeated addition.  
 - **Addition** can be defined as repeated increment.  
-- **Increment** (the “successor” operation) is often written as 
-$$n \mapsto n + 1$$ 
-and is the point where we say, “Okay, we can’t break this down further.”
+- **Increment** (the “successor” operation) is often written as $n \mapsto n + 1$ and is the point where we say, “Okay, we can’t break this down further.”
 
 So we stop at increment and make it an axiom: “There exists a successor function that behaves in this fundamentally simple way.” We basically say, “We can’t derive it from anything more basic, so we accept it as foundational.”
 
@@ -36,9 +32,7 @@ Now, look at **Euclidean geometry**. It’s famously built from five postulates 
 
 The first four seem pretty straightforward—basically describing how lines, segments, and circles behave. But the fifth one, the **Parallel Postulate**, says that if lines have certain angle properties, they’ll meet (or never meet) under certain conditions. Historically, Euclid tried to derive this from the first four but couldn’t. After centuries of attempts, mathematicians concluded the parallel postulate must stand on its own—so it’s part of the foundation.
 
-I recently read (in the footnotes of a book whose name I’ve unfortunately forgotten) a neat idea from **Bertrand Russell**. He suggested that one way we judge the strength or validity of our axioms is whether they lead us to statements we *already believe* to be true. So, for the natural numbers, we already have the idea that we can keep incrementing a number forever and it’ll keep getting bigger. That’s why we accept an axiom like 
-$$n + 1 > n$$ 
-—it neatly matches our intuition that numbers don’t loop back on themselves and can grow indefinitely.
+I recently read (in the footnotes of a book whose name I’ve unfortunately forgotten) a neat idea from **Bertrand Russell**. He suggested that one way we judge the strength or validity of our axioms is whether they lead us to statements we *already believe* to be true. So, for the natural numbers, we already have the idea that we can keep incrementing a number forever and it’ll keep getting bigger. That’s why we accept an axiom like $n + 1 > n$—it neatly matches our intuition that numbers don’t loop back on themselves and can grow indefinitely.
 
 Here are a few general guidelines we can gather from this:
 
@@ -49,5 +43,4 @@ Here are a few general guidelines we can gather from this:
 The short version to choosing the right axioms is: we figure out the irreducible pieces, test them against what we think is “obviously true,” and then put them at the foundation of our system. That’s all “axioms” really are—rock-bottom assumptions that shape the entire universe that follows.
 
 To be honest, writing this post does make me wonder if I can do the same for choosing the right axioms to lead my life. I’ll tackle this in another post.
-
 
