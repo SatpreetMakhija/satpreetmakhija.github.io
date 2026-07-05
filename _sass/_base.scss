@@ -19,6 +19,40 @@ strong {
   color: var(--global-text-color);
 }
 
+p {
+  margin-bottom: 1.15rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Libre Baskerville", "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+h1,
+.post-title {
+  font-weight: 700;
+}
+
+code,
+pre,
+kbd,
+samp,
+.highlight {
+  font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.92em;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -62,10 +96,11 @@ img {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 5px solid var(--global-theme-color);
+  border-left: 3px solid var(--global-theme-color);
   margin: 1.5em 0;
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1.12rem;
+  font-style: italic;
 
   p {
     margin-bottom: 0;
@@ -198,7 +233,7 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
 
   a {
     color: inherit;
@@ -218,6 +253,7 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  font-size: 1rem;
 }
 
 .navbar .dropdown-menu {
@@ -267,7 +303,7 @@ blockquote {
 
   .navbar-nav .nav-item.active>.nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 600;
     color: var(--global-theme-color);
 
     &:hover {
