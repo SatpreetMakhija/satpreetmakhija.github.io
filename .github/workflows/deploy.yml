@@ -26,6 +26,10 @@ jobs:
       with:
         ruby-version: '3.2.2'
         bundler-cache: true
+    - name: Install image tooling 🖼️
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y imagemagick webp
     - name: Update _config.yml ⚙️
       uses: fjogeleit/yaml-update-action@v0.13.1
       with:
@@ -41,9 +45,16 @@ jobs:
         export JEKYLL_ENV=production
         bundle exec jekyll build --lsi
         purgecss -c purgecss.config.js
+        missing=0
+        for asset in $(grep -RhoE '/assets/img/[^" ]+-[0-9]+\.webp' _site | sort -u); do
+          if [ ! -f "_site${asset}" ]; then
+            echo "Missing responsive image: ${asset}"
+            missing=1
+          fi
+        done
+        test "$missing" -eq 0
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
-
