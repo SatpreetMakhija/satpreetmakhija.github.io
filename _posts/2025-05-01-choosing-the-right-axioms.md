@@ -2,7 +2,9 @@
 layout: post
 title: "Choosing the right axioms"
 date: 2025-01-05
+last_updated: 2026-07-09
 description: A framework to help you choose the right axioms
+status: "Conceptual Note"
 
 ---
 
@@ -43,4 +45,3 @@ Here are a few general guidelines we can gather from this:
 The short version to choosing the right axioms is: we figure out the irreducible pieces, test them against what we think is “obviously true,” and then put them at the foundation of our system. That’s all “axioms” really are—rock-bottom assumptions that shape the entire universe that follows.
 
 To be honest, writing this post does make me wonder if I can do the same for choosing the right axioms to lead my life. I’ll tackle this in another post.
-

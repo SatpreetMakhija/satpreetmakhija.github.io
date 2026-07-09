@@ -4,6 +4,8 @@ title: "Your Codebase Reeks of Database Coupling; Here’s the Fix"
 subtitle: "Decoupling your database from your codebase for flexibility and maintainability."
 description: "A guide on how to maintain your codebase for easy database switch"
 date: 2025-01-29
+last_updated: 2026-07-09
+status: "Industry Writing"
 categories: [Software Engineering, Databases]
 tags: [Go, Database, Software Design, Abstraction]
 math: false
@@ -140,4 +142,3 @@ Yes! Even if your database remains unchanged, separating business logic from dat
 **What if data types differ between databases (e.g., MySQL vs. PostgreSQL)?**
 
 Rather than changing the core application logic, use helper functions to transform data types at the repository level. This keeps the rest of your application agnostic to database-specific differences.
-

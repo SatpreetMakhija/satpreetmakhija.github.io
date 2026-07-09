@@ -1,11 +1,11 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: notebook
 nav: true
 nav_order: 2
 pagination:
-  enabled: true
+  enabled: false
   collection: posts
   permalink: /page/:num/
   per_page: 20
@@ -16,111 +16,66 @@ pagination:
     after: 3  # The number of links after the current page
 ---
 
-<div class="post blog-page">
+<div class="post notebook-page">
 
-  {% if site.display_tags or site.display_categories %}
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
+  <header class="post-header notebook-header">
+    <h1 class="post-title">Notes</h1>
+    <p class="notebook-intro">
+      Working notes on programming languages, semantics, computation, and mathematics. Entries remain open to revision.
+    </p>
+  </header>
+
+  {% assign note_types = "Reading Note|Technical Note|Conceptual Note" | split: "|" %}
+
+  <section class="notebook-board" aria-label="Notebook sections">
+    {% for note_type in note_types %}
+      <section class="notebook-column">
+        <h2>{{ note_type }}</h2>
+        {% if note_type == "Reading Note" %}
+          <p class="notebook-column-desc">Understanding developed while reading papers, books, talks, or lecture notes.</p>
+        {% elsif note_type == "Conceptual Note" %}
+          <p class="notebook-column-desc">Careful attempts to clarify ideas, tensions, motivations, and possible connections.</p>
+        {% elsif note_type == "Technical Note" %}
+          <p class="notebook-column-desc">Focused explanations of mathematical or computational concepts.</p>
+        {% endif %}
+
+        <ul class="notebook-list">
+          {% assign note_count = 0 %}
+          {% for post in site.posts %}
+            {% if post.status == note_type %}
+              {% assign note_count = note_count | plus: 1 %}
+              <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+          {% if note_count == 0 %}
+            <li class="notebook-empty">No entries yet.</li>
+          {% endif %}
+        </ul>
+      </section>
+    {% endfor %}
+  </section>
+
+  <section class="notebook-archive">
+    <h2>Earlier / industry writing</h2>
+    <ul class="notebook-archive-list">
+      {% for post in site.posts %}
+        {% if post.status == "Industry Writing" or post.status == nil %}
+          <li>
+            <span>{{ post.date | date: "%Y" }}</span>
+            {% if post.redirect == blank %}
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% elsif post.redirect contains '://' %}
+              <a href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+            {% else %}
+              <a href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
+            {% endif %}
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
-  </div>
-  {% endif %}
-
-  {% assign featured_posts = site.posts | where: "featured", "true" %}
-  {% if featured_posts.size > 0 %}
-    <br>
-    <div class="container featured-posts">
-      {% assign is_even = featured_posts.size | modulo: 2 %}
-      <div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
-      {% for post in featured_posts %}
-        <div class="card-item col">
-          <a href="{{ post.url | relative_url }}">
-            <div class="card hoverable">
-              <div class="row g-0">
-                <div class="col-md-12">
-                  <div class="card-body">
-                    <div class="float-right">
-                      <i class="fa-solid fa-thumbtack fa-xs"></i>
-                    </div>
-                    <h3 class="card-title text-lowercase">{{ post.title }}</h3>
-
-                    <p class="post-meta">
-                      {{ post.date | date: '%B %-d, %Y' }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-      </div>
-    </div>
-    <hr>
-  {% endif %}
-
-  <ul class="post-list">
-
-    {%- if page.pagination.enabled -%}
-      {%- assign postlist = paginator.posts -%}
-    {%- else -%}
-      {%- assign postlist = site.posts -%}
-    {%- endif -%}
-
-    {% for post in postlist %}
-
-    <li>
-{%- if post.thumbnail -%}
-<div class="row">
-          <div class="col-sm-9">
-{%- endif -%}
-        <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p class="post-meta">
-        {{ post.date | date: '%B %-d, %Y' }}
-      </p>
-{%- if post.thumbnail -%}
-    </div>
-  <div class="col-sm-3">
-    <img class="card-img" src="{{post.thumbnail | relative_url}}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
-</div>
-{%- endif -%}
-    </li>
-
-    {% endfor %}
-  </ul>
-
-  {%- if page.pagination.enabled -%}
-    {%- include pagination.html -%}
-  {%- endif -%}
+  </section>
 
 </div>
