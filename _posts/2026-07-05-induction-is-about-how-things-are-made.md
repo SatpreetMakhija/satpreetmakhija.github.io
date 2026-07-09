@@ -2,7 +2,9 @@
 layout: post
 title: "Induction is about how things are made"
 date: 2026-07-05
+last_updated: 2026-07-09
 description: Understanding induction through generative rules
+status: "Technical Note"
 math: true
 tags: [maths, proofs]
 ---

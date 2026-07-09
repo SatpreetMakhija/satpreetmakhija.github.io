@@ -2,7 +2,9 @@
 layout: post
 title: "Context Revolution: Taking machines beyond algorithm"
 date: 2023-02-07 17:39:00
+last_updated: 2026-07-09
 description: how AI changes computations performed by a computer
+status: "Conceptual Note"
 
 ---
 

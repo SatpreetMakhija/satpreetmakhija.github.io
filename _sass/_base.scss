@@ -1141,3 +1141,179 @@ nav[data-toggle="toc"] {
 #toc-sidebar {
   z-index: 1;
 }
+
+// Public research notebook prototype
+.notebook-page {
+  .notebook-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .notebook-kicker,
+  .post-status {
+    color: var(--global-theme-color);
+    font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+  }
+
+  .notebook-intro {
+    color: var(--global-text-color-light);
+    max-width: 42rem;
+  }
+}
+
+.notebook-board,
+.notebook-archive {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: min(94vw, 1120px);
+}
+
+.notebook-board {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 2.5rem;
+}
+
+.notebook-column {
+  min-width: 0;
+
+  h2 {
+    font-size: 0.96rem;
+    line-height: 1.35;
+    margin-bottom: 0.65rem;
+  }
+}
+
+.notebook-column-desc {
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+
+.notebook-list,
+.notebook-archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notebook-list {
+  li {
+    margin-bottom: 0.95rem;
+  }
+
+  a {
+    display: block;
+    line-height: 1.42;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    display: block;
+    font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.68rem;
+    margin-top: 0.15rem;
+  }
+
+  .notebook-empty {
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    font-style: italic;
+  }
+}
+
+.notebook-archive {
+  border-top: 1px solid var(--global-divider-color);
+  margin-top: 3rem;
+  padding-top: 1.4rem;
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0.45rem;
+  }
+
+  p {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    max-width: 38rem;
+  }
+}
+
+.notebook-archive-list {
+  columns: 2 18rem;
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 0.45rem;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    display: inline-block;
+    font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.72rem;
+    margin-right: 0.65rem;
+    min-width: 2.3rem;
+  }
+}
+
+.post-status {
+  color: var(--global-theme-color);
+  font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.post-header .post-description {
+  color: var(--global-text-color-light);
+  margin-top: 0.6rem;
+  max-width: 42rem;
+}
+
+.research-questions {
+  margin-top: 1.8rem;
+}
+
+.research-question-list {
+  list-style: none;
+  margin: 1.6rem 0 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    color: var(--global-text-color);
+    font-size: 0.92rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .notebook-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .notebook-board,
+  .notebook-archive {
+    margin-left: 0;
+    transform: none;
+    width: 100%;
+  }
+}

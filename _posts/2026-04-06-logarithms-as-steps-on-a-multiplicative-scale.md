@@ -2,7 +2,9 @@
 layout: post
 title: "Changing bases — an intuitive explanation"
 date: 2026-04-06
+last_updated: 2026-07-09
 description: Why the change of base formula works, explained through a multiplicative number line
+status: "Technical Note"
 math: true
 tags: [maths]
 ---
@@ -19,8 +21,8 @@ There exists an algebraic proof. This explanation is meant to give you more intu
 
 Consider a number line where we reach a number $x$ by repeatedly multiplying by some fixed number $a > 1$. Take $a = 2$. Starting from 1:
 
-<div style="overflow-x: auto; margin: 2em 0;">
-<svg viewBox="0 0 680 100" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
+<div style="overflow-x: auto; margin: 1.75em 0; text-align: center;">
+<svg viewBox="0 0 680 100" xmlns="http://www.w3.org/2000/svg" style="max-width: 620px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
   <!-- main line -->
   <line x1="30" y1="55" x2="660" y2="55" stroke="currentColor" stroke-width="1.5"/>
   <polygon points="660,55 652,51 652,59" fill="currentColor"/>
@@ -63,8 +65,8 @@ Consider a number line where we reach a number $x$ by repeatedly multiplying by 
 
 The number 8 is three steps from 1. The number 32 is five. The position of any number $x$ on this scale — the number of steps from 1 — is what we call $\log_2(x)$. For an arbitrary $x$, the length from 1 to $x$ is $\log_2(x)$.
 
-<div style="overflow-x: auto; margin: 2em 0;">
-<svg viewBox="0 0 680 125" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
+<div style="overflow-x: auto; margin: 1.75em 0; text-align: center;">
+<svg viewBox="0 0 680 125" xmlns="http://www.w3.org/2000/svg" style="max-width: 620px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
   <!-- main line -->
   <line x1="30" y1="50" x2="660" y2="50" stroke="currentColor" stroke-width="1.5"/>
   <polygon points="660,50 652,46 652,54" fill="currentColor"/>
@@ -108,8 +110,8 @@ The number 8 is three steps from 1. The number 32 is five. The position of any n
 
 Now introduce another number $b > 1$. It too has a place on our scale, at position $\log_a(b)$. Take $b = 8$. On the base-2 scale, 8 sits at step 3.
 
-<div style="overflow-x: auto; margin: 2em 0;">
-<svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
+<div style="overflow-x: auto; margin: 1.75em 0; text-align: center;">
+<svg viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg" style="max-width: 620px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
   <!-- main line -->
   <line x1="30" y1="55" x2="660" y2="55" stroke="currentColor" stroke-width="1.5"/>
   <polygon points="660,55 652,51 652,59" fill="currentColor"/>
@@ -160,8 +162,8 @@ The segment from 1 to $b$ has a definite length on the scale: $\log_a(b)$ steps.
 
 The segment from 1 to $x$ has length $\log_a(x)$. The segment from 1 to $b$ has length $\log_a(b)$. Each jump of $\times b$ covers exactly $\log_a(b)$ units on the scale. So we ask: how many copies of the smaller segment fit into the larger one?
 
-<div style="overflow-x: auto; margin: 2em 0;">
-<svg viewBox="0 0 750 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 750px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
+<div style="overflow-x: auto; margin: 1.75em 0; text-align: center;">
+<svg viewBox="0 0 750 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 680px; width: 100%; font-family: Georgia, 'Times New Roman', serif;">
   <!-- main line -->
   <line x1="30" y1="70" x2="720" y2="70" stroke="currentColor" stroke-width="1.5"/>
   <polygon points="720,70 712,66 712,74" fill="currentColor"/>

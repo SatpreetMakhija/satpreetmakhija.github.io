@@ -2,7 +2,9 @@
 layout: post
 title: "What does a language for a Turing machine represent?"
 date: 2026-07-05
+last_updated: 2026-07-09
 description: Understanding languages, encodings, recognizers, and deciders
+status: "Technical Note"
 math: true
 tags: [theory, computation]
 ---
