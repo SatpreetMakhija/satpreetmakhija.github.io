@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="poem-post">
+  <header class="poem-header">
+    <h1 class="poem-title">{{ page.title }}</h1>
+    <p class="poem-meta">
+      {% if page.display_date %}
+        {{ page.display_date }}
+      {% else %}
+        {{ page.date | date: "%B %-d, %Y" }}
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="poem-body{% if page.centered %} poem-body--centered{% endif %}">
+    {{ content }}
+  </div>
+
+  {% if page.note %}
+    <aside class="poem-note">
+      <h2>Note</h2>
+      {{ page.note | markdownify }}
+    </aside>
+  {% endif %}
+</article>

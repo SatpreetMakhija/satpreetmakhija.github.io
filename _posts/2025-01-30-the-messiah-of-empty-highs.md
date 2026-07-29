@@ -4,11 +4,12 @@ title: "The Messiah of Empty Highs"
 description: "On diminishing returns of stimulation."
 tags: [philosophy, modern life]
 categories: [creative, essay]
+writing_type: literary
+genre: prose
 math: false
 toc: false
 comments: true
 share: true
-published: false
 _styles: >
   .post-content {
     margin-top: 2rem;

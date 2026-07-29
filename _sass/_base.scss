@@ -1156,6 +1156,17 @@ nav[data-toggle="toc"] {
   width: min(94vw, 760px);
 }
 
+.writings-group {
+  & + & {
+    margin-top: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 .writings-list {
   list-style: none;
   margin: 0;
@@ -1176,8 +1187,63 @@ nav[data-toggle="toc"] {
 
   span {
     color: var(--global-text-color-light);
-    font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 0.72rem;
+    font-family: inherit;
+    font-size: 0.78rem;
+  }
+}
+
+.poem-post {
+  margin: 0 auto 4rem;
+  max-width: 38rem;
+}
+
+.poem-header {
+  margin-bottom: 2.25rem;
+}
+
+.poem-title {
+  font-size: 2rem;
+  margin-bottom: 0.35rem;
+}
+
+.poem-meta {
+  color: var(--global-text-color-light);
+  font-family: inherit;
+  font-size: 0.78rem;
+  margin: 0;
+}
+
+.poem-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+
+  p {
+    margin: 0;
+  }
+}
+
+.poem-body--centered {
+  text-align: center;
+}
+
+.poem-note {
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  margin-top: 3rem;
+  padding-top: 1rem;
+
+  h2 {
+    color: var(--global-text-color);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.45rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
   }
 }
 
