@@ -8,11 +8,11 @@ middle_name:
 last_name: Makhija
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Computer scientist working on programming languages, formal methods, and reliable software systems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   
-keywords: satpreet, satpreetmakhija, makhija  # add your own keywords or leave empty
+keywords: satpreet, satpreetmakhija, makhija, computer science, programming languages, formal methods, reliable software systems  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⊢  # the symbol used as the favicon (alternatively, provide image name in /assets/img/)
@@ -122,8 +122,8 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Logs # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_name: Writings # blog_name will be displayed in your blog page
+blog_nav_title: writings # your blog must have a title for it to be displayed in the nav bar
 blog_description: 
 permalink: /blog/:year/:title/
 

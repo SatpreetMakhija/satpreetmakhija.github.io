@@ -1142,33 +1142,43 @@ nav[data-toggle="toc"] {
   z-index: 1;
 }
 
-// Public research notebook prototype
-.notebook-page {
-  .notebook-header {
-    margin-bottom: 2.5rem;
-  }
-
-  .notebook-kicker,
-  .post-status {
-    color: var(--global-theme-color);
-    font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    margin-bottom: 0.35rem;
-    text-transform: uppercase;
-  }
-
-  .notebook-intro {
-    color: var(--global-text-color-light);
-    max-width: 42rem;
-  }
-}
-
+// Writings index
 .notebook-board,
 .notebook-archive {
   margin-left: 50%;
   transform: translateX(-50%);
   width: min(94vw, 1120px);
+}
+
+.writings-index {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: min(94vw, 760px);
+}
+
+.writings-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    align-items: baseline;
+    border-bottom: 1px solid var(--global-divider-color);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 0.65rem 0;
+  }
+
+  a {
+    line-height: 1.45;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.72rem;
+  }
 }
 
 .notebook-board {
@@ -1276,31 +1286,6 @@ nav[data-toggle="toc"] {
   color: var(--global-text-color-light);
   margin-top: 0.6rem;
   max-width: 42rem;
-}
-
-.research-questions {
-  margin-top: 1.8rem;
-}
-
-.research-question-list {
-  list-style: none;
-  margin: 1.6rem 0 0;
-  padding: 0;
-
-  li {
-    margin-bottom: 1.4rem;
-  }
-
-  h2 {
-    font-size: 1.05rem;
-    margin-bottom: 0.2rem;
-  }
-
-  p {
-    color: var(--global-text-color);
-    font-size: 0.92rem;
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: 900px) {
