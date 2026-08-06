@@ -3,7 +3,7 @@
             {% if site.news != blank -%}
             {%- assign news = site.news | where_exp: "item", "item.hidden != true" | reverse -%}
             {%- assign news_size = news | size -%}
-            <div class="table-responsive" {% if site.announcements.scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
+            <div class="table-responsive" {% if site.announcements.scrollable and news_size > 3 %}style="max-height: 15rem"{% endif %}>
               <table class="table table-sm table-borderless">
               {% if include.limit and site.announcements.limit %}
               {% assign news_limit = site.announcements.limit %}
