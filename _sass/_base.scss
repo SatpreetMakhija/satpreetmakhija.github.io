@@ -231,6 +231,15 @@ blockquote {
   }
 }
 
+@media (max-width: 575px) {
+  .profile.float-left,
+  .profile.float-right {
+    float: none !important;
+    margin: 0 0 1.5rem !important;
+    width: 100%;
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.95rem;
@@ -691,6 +700,78 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+
+  .publication-card {
+    border-top: 1px solid var(--global-divider-color);
+    padding: 1.4rem 0 1.1rem;
+  }
+
+  .publication-card__meta {
+    color: var(--global-text-color-light);
+    font-family: "Source Code Pro", "SFMono-Regular", Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    margin-bottom: 0.55rem;
+    text-transform: uppercase;
+  }
+
+  .publication-card__title {
+    font-size: 1.25rem;
+    line-height: 1.42;
+    margin: 0 0 0.35rem;
+    max-width: 43rem;
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .publication-card__authors {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .publication-card__author-self {
+    font-weight: 600;
+  }
+
+  .publication-card__summary {
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 0.9rem;
+    max-width: 42rem;
+  }
+
+  .publication-card__actions {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+
+    a {
+      color: var(--global-text-color-light);
+      cursor: pointer;
+      font-family: "Source Code Pro", "SFMono-Regular", Consolas, monospace;
+      font-size: 0.74rem;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+
+    a.publication-card__primary {
+      color: var(--global-theme-color);
+      font-weight: 600;
+    }
+  }
 
   h1 {
     color: var(--global-theme-color);
