@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a computer scientist working on programming languages, formal methods, and reliable software systems. I'm currently a researcher at the [Vachani School of Advanced Computing](https://www.ashoka.edu.in/vachani-school-of-advanced-computing/). Previously at [Google Cloud](https://cloud.google.com/distributed-cloud), I focused on airgapped software. I hold a bachelor's degree in computer science from [Ashoka University](https://www.ashoka.edu.in/).
+I'm a computer scientist working on programming languages, formal methods, and reliable software systems. I'm currently a researcher at the [Vachani School of Advanced Computing](https://www.ashoka.edu.in/vachani-school-of-advanced-computing/). Previously at [Google Cloud](https://cloud.google.com/distributed-cloud), I focused on airgapped software.
 <br>
 <br>
 If you work on programming languages, formal methods, verification, or reliable software systems, I'd love to chat. Just shoot an email at [satpreet.makhija@ashoka.edu.in](mailto:satpreet.makhija@ashoka.edu.in).
