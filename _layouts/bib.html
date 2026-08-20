@@ -66,6 +66,9 @@
     {%- if entry.html -%}
       <a href="{{ entry.html }}">HTML</a>
     {%- endif -%}
+    {%- if entry.lean -%}
+      <a href="{{ entry.lean }}">Lean 4 formalization</a>
+    {%- endif -%}
     {%- if entry.abstract -%}
       <a class="abstract" role="button" tabindex="0">Abstract</a>
     {%- endif -%}
