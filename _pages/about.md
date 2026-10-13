@@ -15,10 +15,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a computer scientist working on programming languages, formal methods, and reliable software systems. I'm currently a researcher at the [Vachani School of Advanced Computing](https://www.ashoka.edu.in/vachani-school-of-advanced-computing/). Previously at [Google Cloud](https://cloud.google.com/distributed-cloud), I focused on airgapped software.
+I'm a software engineer and researcher with a background in distributed systems, cloud infrastructure, and platform engineering. I'm currently a researcher at the [Vachani School of Advanced Computing](https://www.ashoka.edu.in/vachani-school-of-advanced-computing/), working on programming languages and formal methods. Previously at [Google Cloud](https://cloud.google.com/distributed-cloud) and [Firebolt](https://www.firebolt.io/), I built Kubernetes-based infrastructure and software for air-gapped environments.
 <br>
 <br>
-If you work on programming languages, formal methods, verification, or reliable software systems, I'd love to chat. Just shoot an email at [satpreet.makhija@ashoka.edu.in](mailto:satpreet.makhija@ashoka.edu.in).
+If you're building infrastructure or working on programming languages and formal methods, I'd love to chat. Reach out at [work.satpreet@gmail.com](mailto:work.satpreet@gmail.com).
 
 <!-- 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
