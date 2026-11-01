@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm an AI Researcher at [Truth Audit Labs](https://truthauditlabs.ai/) working on AI safety products. I have a background in formal methods and causal inference. Previously, I wrote software for [Google Distributed Cloud](https://cloud.google.com/distributed-cloud-air-gapped). Most of my core contributions are in private repos.
+I'm an AI Researcher at [Truth Audit Labs](https://truthauditlabs.ai/) working on AI safety products. I have a background in formal methods and causal inference. Previously, I wrote software for [Google Distributed Cloud](https://cloud.google.com/distributed-cloud-air-gapped).
 <br>
 <br>
 I love meeting people over the internet. Feel free to reach out at [satpreet@truthauditlabs.ai](mailto:satpreet@truthauditlabs.ai).
