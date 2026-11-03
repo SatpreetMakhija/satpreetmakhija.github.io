@@ -2,6 +2,50 @@
  * CV shared styles
  *****************************/
 
+.cv-document {
+  h2 {
+    border-bottom: 1px solid var(--global-divider-color);
+    font-size: 1.4rem;
+    margin: 2.5rem 0 1.25rem;
+    padding-bottom: 0.4rem;
+  }
+
+  > h2:first-child {
+    margin-top: 0;
+  }
+
+  h3 {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.15rem;
+    gap: 0.25rem 1rem;
+    justify-content: space-between;
+    line-height: 1.45;
+    margin: 1.5rem 0 0.2rem;
+  }
+
+  .cv-date {
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .cv-organization {
+    color: var(--global-text-color-light);
+    margin-bottom: 0.6rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  li {
+    margin-bottom: 0.15rem;
+  }
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }

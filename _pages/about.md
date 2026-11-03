@@ -11,7 +11,7 @@ profile:
 
 news: false # hides recent updates
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # hides research on the homepage
 social: true  # includes social icons at the bottom of the page
 ---
 
