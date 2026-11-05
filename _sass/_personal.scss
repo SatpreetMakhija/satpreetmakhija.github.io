@@ -105,6 +105,14 @@ body.personal-site {
 
 // Consistent links throughout the site; the name retains its own emphasis.
 
+.bookshelf-entry {
+  margin: 1.5rem 0 2rem;
+
+  h2 { font-size: 18px; line-height: 1.5; margin: 0 0 0.2rem; }
+  .bookshelf-author { color: var(--global-text-color-light); font-size: 15px; margin-bottom: 0.75rem; }
+  .bookshelf-note p:last-child { margin-bottom: 0; }
+}
+
 body.personal-site a:not(.site-name) {
   color: #e39360;
   font-weight: 400;
