@@ -1,0 +1,36 @@
+<style>
+  .quiet-orbits { display: block; width: 100%; height: auto; overflow: visible; }
+  .quiet-orbits__track { fill: none; stroke: #bb470b; stroke-opacity: .17; stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .quiet-orbits__turn { transform-origin: 0 0; animation: quiet-orbits-revolve 34s linear infinite; }
+  .quiet-orbits__turn--middle { animation-duration: 57s; animation-delay: -21s; }
+  .quiet-orbits__turn--outer { animation-duration: 86s; animation-delay: -11s; }
+  .quiet-orbits__turn--inner { animation-delay: -6s; }
+  @keyframes quiet-orbits-revolve { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .quiet-orbits__turn { animation: none; transform: rotate(28deg); }
+    .quiet-orbits__turn--middle { transform: rotate(174deg); }
+    .quiet-orbits__turn--outer { transform: rotate(287deg); }
+  }
+</style>
+<svg class="quiet-orbits" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" aria-hidden="true" focusable="false">
+  <!-- The tilted plane gives the orbits depth without requiring a canvas. -->
+  <g transform="translate(250 250) rotate(-26) scale(1 .64)">
+    <circle class="quiet-orbits__track" r="84" />
+    <circle class="quiet-orbits__track" r="143" />
+    <circle class="quiet-orbits__track" r="209" />
+    <g class="quiet-orbits__turn quiet-orbits__turn--inner">
+      <circle cx="84" cy="0" r="7" fill="#bb470b" />
+    </g>
+    <g class="quiet-orbits__turn quiet-orbits__turn--middle">
+      <circle cx="143" cy="0" r="11" fill="#e39360" />
+      <circle cx="-143" cy="0" r="2.5" fill="#bb470b" opacity=".35" />
+    </g>
+    <g class="quiet-orbits__turn quiet-orbits__turn--outer">
+      <circle cx="209" cy="0" r="8" fill="#d6b19a" />
+      <circle cx="209" cy="0" r="15" fill="none" stroke="#d6b19a" stroke-width="1" opacity=".6" />
+    </g>
+  </g>
+  <circle cx="250" cy="250" r="26" fill="#e39360" opacity=".08" />
+  <circle cx="250" cy="250" r="17" fill="#e39360" />
+  <circle cx="245" cy="245" r="4" fill="#fff" opacity=".15" />
+</svg>

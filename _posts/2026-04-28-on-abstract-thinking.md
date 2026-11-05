@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: "On Abstract Thinking"
 date: 2026-04-28

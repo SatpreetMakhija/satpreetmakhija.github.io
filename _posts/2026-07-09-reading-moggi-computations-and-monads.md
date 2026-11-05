@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: "Reading Moggi: computations as effectful maps"
 date: 2026-07-09

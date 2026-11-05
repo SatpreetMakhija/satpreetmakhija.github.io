@@ -1,0 +1,60 @@
+<div class="mobile-study" aria-hidden="true">
+  <svg class="mobile-study__canvas" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" focusable="false">
+    <defs>
+      <linearGradient id="mobile-study-apricot" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#edb58d" />
+        <stop offset="1" stop-color="#e39360" />
+      </linearGradient>
+    </defs>
+    <g class="mobile-study__wire">
+      <path d="M251 24 V94" />
+      <circle cx="251" cy="98" r="4" />
+    </g>
+    <g class="mobile-study__whole">
+      <path class="mobile-study__wire" d="M132 147 Q195 137 251 102 Q296 127 373 133" />
+      <g class="mobile-study__right">
+        <path class="mobile-study__wire" d="M373 133 V204" />
+        <path fill="#bb470b" d="M373 204 C393 203 413 221 409 240 C405 258 377 269 357 256 C340 245 346 225 373 204Z" />
+      </g>
+      <g class="mobile-study__left">
+        <path class="mobile-study__wire" d="M132 147 V205" />
+        <circle class="mobile-study__wire" cx="132" cy="208" r="3" />
+        <path class="mobile-study__wire" d="M69 235 Q97 231 132 211 Q175 229 238 240" />
+        <g class="mobile-study__leaf">
+          <path class="mobile-study__wire" d="M69 235 V275" />
+          <path fill="url(#mobile-study-apricot)" d="M69 275 C82 277 98 290 102 313 C78 320 48 309 44 293 C42 284 52 277 69 275Z" />
+        </g>
+        <g class="mobile-study__lower">
+          <path class="mobile-study__wire" d="M238 240 V302" />
+          <circle class="mobile-study__wire" cx="238" cy="305" r="3" />
+          <path class="mobile-study__wire" d="M171 332 Q204 324 238 308 Q277 322 317 324" />
+          <g class="mobile-study__drop">
+            <path class="mobile-study__wire" d="M171 332 V370" />
+            <path fill="#d17b48" d="M171 370 C188 378 195 397 183 410 C171 421 146 414 145 400 C144 388 157 376 171 370Z" />
+          </g>
+          <g class="mobile-study__disc">
+            <path class="mobile-study__wire" d="M317 324 V362" />
+            <ellipse cx="317" cy="379" rx="24" ry="17" fill="#e39360" transform="rotate(-24 317 379)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+<style>
+  .mobile-study { width: 100%; max-width: 500px; margin: auto; }
+  .mobile-study__canvas { display: block; width: 100%; height: auto; overflow: visible; }
+  .mobile-study__wire { fill: none; stroke: #6d625b; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+  .mobile-study__whole { transform-origin: 251px 98px; animation: mobile-study-sway 15s ease-in-out infinite alternate; }
+  .mobile-study__left { transform-origin: 132px 147px; animation: mobile-study-counter 11s ease-in-out -4s infinite alternate; }
+  .mobile-study__right { transform-origin: 373px 133px; animation: mobile-study-counter 13s ease-in-out -8s infinite alternate; }
+  .mobile-study__lower { transform-origin: 238px 240px; animation: mobile-study-sway 12s ease-in-out -6s infinite alternate; }
+  .mobile-study__leaf { transform-origin: 69px 235px; animation: mobile-study-counter 9s ease-in-out -3s infinite alternate; }
+  .mobile-study__drop { transform-origin: 171px 332px; animation: mobile-study-counter 10s ease-in-out -7s infinite alternate; }
+  .mobile-study__disc { transform-origin: 317px 324px; animation: mobile-study-counter 8s ease-in-out -2s infinite alternate; }
+  @keyframes mobile-study-sway { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
+  @keyframes mobile-study-counter { from { transform: rotate(5deg); } to { transform: rotate(-5deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-study *, .mobile-study *::before, .mobile-study *::after { animation: none !important; }
+  }
+</style>

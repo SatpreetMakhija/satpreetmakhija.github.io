@@ -9,8 +9,7 @@ last_name: Makhija
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Computer scientist working on programming languages, formal methods, and reliable software systems.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+footer_text: ""
   
 keywords: satpreet, satpreetmakhija, makhija, computer science, programming languages, formal methods, reliable software systems  # add your own keywords or leave empty
 
@@ -19,7 +18,7 @@ icon: ⊢  # the symbol used as the favicon (alternatively, provide image name i
 
 url: https://satpreetmakhija.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
-last_updated: true # set to true if you want to display last updated in the footer
+last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -46,7 +45,7 @@ rss_icon: false
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
+navbar_fixed: false
 footer_fixed: false
 
 # Dimensions

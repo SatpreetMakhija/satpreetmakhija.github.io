@@ -10,13 +10,13 @@
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="personal-site {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-{{ page.content_margin_top | default: 5 }}">
+    <main class="container site-content">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
@@ -44,10 +44,12 @@
       {% else %}
         {{ content }}
       {% endif %}
-    </div>
+    </main>
+
+    {% include site-orbits.html %}
 
     <!-- Footer -->
-    {%- include footer.html %}
+    {% unless page.permalink == "/" %}{% include footer.html %}{% endunless %}
 
     <!-- JavaScripts -->
     {% include scripts/jquery.html %}

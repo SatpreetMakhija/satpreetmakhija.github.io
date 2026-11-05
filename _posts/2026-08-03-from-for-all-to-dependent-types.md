@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: "How Universal Proofs Motivate Dependent Types"
 date: 2026-08-03

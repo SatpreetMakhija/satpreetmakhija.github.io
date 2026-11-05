@@ -1,0 +1,35 @@
+<div class="site-orbits" aria-hidden="true">
+  {% include animation-orbits.html %}
+</div>
+<style>
+  .site-orbits { width: min(70vw, 360px); margin: 36px auto 0; pointer-events: none; }
+  @media (min-width: 1200px) {
+    .site-orbits { position: fixed; right: 32px; bottom: 24px; width: min(36vw, 500px); margin: 0; }
+  }
+</style>
+<script>
+  (() => {
+    const orbit = document.querySelector('.site-orbits');
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    function synchronizeOrbits() {
+      if (reducedMotion.matches) return;
+      const now = Date.now();
+      orbit.querySelectorAll('.quiet-orbits__turn').forEach(planet => {
+        planet.getAnimations().forEach(animation => {
+          if (animation.animationName !== 'quiet-orbits-revolve') return;
+          const duration = Number(animation.effect.getTiming().duration);
+          // Every document uses the same clock, including reloads and history restores.
+          // Existing negative CSS delays retain each planet's individual phase offset.
+          animation.currentTime = now % duration;
+        });
+      });
+    }
+    // Inline, immediately after the SVG: set the position before its first paint.
+    synchronizeOrbits();
+    window.addEventListener('pageshow', synchronizeOrbits);
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) synchronizeOrbits();
+    });
+    reducedMotion.addEventListener('change', synchronizeOrbits);
+  })();
+</script>

@@ -1254,11 +1254,7 @@ nav[data-toggle="toc"] {
   padding: 0;
 
   li {
-    align-items: baseline;
-    border-bottom: 1px solid var(--global-divider-color);
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: minmax(0, 1fr) auto;
+    border: 0;
     padding: 0.65rem 0;
   }
 
@@ -1270,6 +1266,8 @@ nav[data-toggle="toc"] {
     color: var(--global-text-color-light);
     font-family: inherit;
     font-size: 0.78rem;
+    margin-left: 0.5rem;
+    white-space: nowrap;
   }
 }
 

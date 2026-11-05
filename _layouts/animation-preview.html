@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign homepage = site.pages | where: "permalink", "/" | first %}
+<div class="animation-preview-copy">
+  {{ homepage.content | markdownify }}
+</div>
+<nav class="animation-preview-picker" aria-label="Animation previews">
+  <span>Animation studies</span>
+  <a href="{{ '/preview/mobile/' | relative_url }}"{% if page.animation == 'mobile' %} aria-current="page"{% endif %}>01 Mobile</a>
+  <a href="{{ '/preview/orbits/' | relative_url }}"{% if page.animation == 'orbits' %} aria-current="page"{% endif %}>02 Orbits</a>
+  <a href="{{ '/preview/constellation/' | relative_url }}"{% if page.animation == 'constellation' %} aria-current="page"{% endif %}>03 Constellation</a>
+</nav>
+<div class="animation-preview-art{% if page.animation == 'constellation' %} animation-preview-art--roaming{% endif %}" aria-hidden="true">
+  {% case page.animation %}
+    {% when 'mobile' %}{% include animation-mobile.html %}
+    {% when 'orbits' %}{% include animation-orbits.html %}
+    {% when 'constellation' %}{% include animation-constellation.html %}
+  {% endcase %}
+</div>

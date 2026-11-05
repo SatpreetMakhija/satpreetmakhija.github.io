@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: How to avoid prompt injection attack by following prompt engineering best practices?
 date: 2023-07-11 17:39:00
