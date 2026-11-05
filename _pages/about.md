@@ -20,7 +20,7 @@ Hey, I'm Satpreet. I build AI safety products at [Truth Audit Labs](https://trut
 
 Before switching to AI safety, I studied causality from a programming language perspective, using formal methods at the [Vachani School of Advanced Computing](https://www.ashoka.edu.in/vachani-school-of-advanced-computing/). I learned my engineering chops at [Google Cloud](https://cloud.google.com/distributed-cloud-air-gapped) building portable data centers. It turns out air-gapped software is really complicated. I have a bachelor's degree in computer science from [Ashoka University](https://www.ashoka.edu.in/), where a liberal arts education shaped my approach to problem solving.
 
-I like exploring the mind through meditation. It has helped me understand my own patterns of thought. I'd like to spend more time on the tennis court than I currently do.
+I believe in computational kindness: explaining ideas in their simplest form. You might enjoy my essay, [What does a language for a Turing machine represent?]({{ '/blog/2026/what-does-a-language-for-a-turing-machine-represent/' | relative_url }}). Meditation has helped me explore my own mind and understand my patterns of thought. I'd like to spend more time on the tennis court than I currently do.
 
 Say hi if we're into the same things!
 
