@@ -10,8 +10,7 @@ nav_order: 1
 <div class="bookshelf">
   {% for book in site.data.bookshelf %}
   <article class="bookshelf-entry">
-    <h2><a href="{{ book.goodreads | escape }}">{{ book.title | escape }}</a></h2>
-    <p class="bookshelf-author">{{ book.author | escape }}</p>
+    <h2><a href="{{ book.goodreads | escape }}">{{ book.title | escape }}</a>{% if book.author != blank %} <span class="bookshelf-author">by {{ book.author | escape }}</span>{% endif %}</h2>
     {% if book.note != blank %}
     <div class="bookshelf-note">{{ book.note | markdownify }}</div>
     {% endif %}

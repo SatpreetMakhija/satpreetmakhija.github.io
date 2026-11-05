@@ -108,8 +108,9 @@ body.personal-site {
 .bookshelf-entry {
   margin: 1.5rem 0 2rem;
 
-  h2 { font-size: 18px; line-height: 1.5; margin: 0 0 0.2rem; }
-  .bookshelf-author { color: var(--global-text-color-light); font-size: 15px; margin-bottom: 0.75rem; }
+  h2 { font-size: 18px; line-height: 1.5; margin: 0; }
+  .bookshelf-author { display: inline-block; color: var(--global-text-color-light); font-size: 13px; font-weight: 400; }
+  .bookshelf-note p:first-child { margin-top: 0; }
   .bookshelf-note p:last-child { margin-bottom: 0; }
 }
 

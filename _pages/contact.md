@@ -1,6 +1,7 @@
 ---
 layout: page
 title: contact
+hide_title: true
 permalink: /contact/
 nav: true
 nav_order: 4

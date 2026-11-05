@@ -17,42 +17,35 @@ nav_order: 3
 [Truth Audit Labs](https://truthauditlabs.ai/)
 {: .cv-organization }
 
-- Build AI safety products.
+Building compressed benchmarking for AI agents across text and voice modalities.
 
 ### Research Associate <span class="cv-date">Jun 2026 – Oct 2026</span>
 
 [Ashoka University](https://www.ashoka.edu.in/) · Programming Languages
 {: .cv-organization }
 
-- Developed novel algorithms for program synthesis.
-- Formalized causal interventions in Lean 4.
+Developed novel algorithms for program synthesis. Worked on causal interventions and formalized results in Lean 4.
 
 ### Software Engineer <span class="cv-date">Nov 2025 – Mar 2026</span>
 
 [Firebolt](https://www.firebolt.io/) · Self-hosted Platform
 {: .cv-organization }
 
-- Built infrastructure for air-gapped deployments.
-- Implemented feature flags and Temporal workflows.
+Part of a three-engineer team building the self-hosted platform for Firebolt's data warehouse. Built platform features such as feature flag management and infrastructure for air-gapped Temporal workflows.
 
 ### Software Engineer <span class="cv-date">Mar 2024 – Sep 2025</span>
 
 [Google](https://cloud.google.com/) · [Distributed Cloud](https://cloud.google.com/distributed-cloud-air-gapped)
 {: .cv-organization }
 
-- Built self-healing container registries for air-gapped, multi-cluster Kubernetes deployments.
-- Implemented image verification and offline bootstrap.
-- Built observability endpoints using Prometheus and Grafana.
-- Mentored junior engineers and a summer intern.
+Built infrastructure for container registry management and an observability platform with alerting for air-gapped environments. Multi-cluster Kubernetes control planes, Kubernetes controllers, and CRDs were the bread and butter of the job.
 
 ### Strategic Cloud Engineer <span class="cv-date">Jul 2022 – Mar 2024</span>
 
 [Google Cloud](https://cloud.google.com/)
 {: .cv-organization }
 
-- Built cloud infrastructure and reusable Terraform modules.
-- Prototyped an LLM-powered interface for tabular data discovery.
-- Contributed Spark and Hadoop ETL templates to Dataproc.
+Built prototypes of LLM-powered interfaces for tabular data exploration. Contributed open-source data processing templates for Spark and Hadoop on Dataproc.
 
 ## Education
 
@@ -77,7 +70,5 @@ Satpreet Makhija · Preprint, Aug 2026.
 
 [Ashoka University](https://www.ashoka.edu.in/) · [Data Structures and Algorithms](https://aalok-thakkar.github.io/teaching/monsoon2026/dsa/index.html)
 {: .cv-organization }
-
-Course taught by [Aalok Thakkar](https://aalok-thakkar.github.io/).
 
 </div>
